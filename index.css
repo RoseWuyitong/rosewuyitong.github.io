@@ -74,6 +74,7 @@ html {
 }
 
 #links a {
+    font-size: 2.2vw;
     margin: 0px 30px;
     color: inherit;
     text-decoration: none;
