@@ -321,7 +321,7 @@ figure.right figcaption {
 @media (max-width: 429px) {
     #links a {
         font-size: 1000px;
-        margin: 0.2vw;
+        margin: 10vw;
     }
 
     #tagline {
@@ -338,9 +338,6 @@ figure.right figcaption {
     }
 }
 
-@media (max-width: 449px) {
-
-}
 
 /* Medium screens (tablets and small laptops) */
 @media (min-width: 450px) and (max-width: 999px) {
