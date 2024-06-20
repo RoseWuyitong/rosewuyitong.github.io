@@ -320,8 +320,17 @@ figure.right figcaption {
 /* Small screens (phone) */
 @media (max-width: 429px) {
     #links a {
-        font-size: min(20px , 2vw);
+        font-size: 1000px;
         margin: 0.2vw;
+    }
+
+    #tagline {
+        font-size: 10vw;
+    }
+    
+    #tagline2 {
+        font-size: 5vw;
+        margin-top: 1vw;
     }
 
     #middle {
@@ -329,15 +338,23 @@ figure.right figcaption {
     }
 }
 
+@media (max-width: 449px) {
+
+}
+
 /* Medium screens (tablets and small laptops) */
-@media (min-width: 430px) and (max-width: 1199px)  {
+@media (min-width: 450px) and (max-width: 999px) {
     #links a {
-        margin: 0.5vw;
-        font-size: max(12px, 2vw);
+        margin: 0.2vw;
+        font-size: max(14px, 2vw);
     }
 
     #middle {
         padding-top: 150px;
+    }
+
+    .btn_one {
+        font-size: min(14px, 1.8vw);
     }
 
 }
@@ -345,8 +362,8 @@ figure.right figcaption {
 /* Large screens (desktops and larger laptops) */
 @media (min-width: 1000px) {
     #links a {
-        margin: 0.5vw min(20px, 3vw);
-        font-size: min(25px, 2.5vw);
+        margin: 0.5vw min(22px, 3vw);
+        font-size: min(22px, 2.2vw);
     }
 
     .btn_one {
