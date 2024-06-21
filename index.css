@@ -234,8 +234,7 @@ figure {
 figure.right {
     float: right; /* Floats the figure to the right */
     max-width: 50%; /* Limits the figure's width to the maximum available width */
-    margin-left: 20px; /* Optional: Adds space between the figure and adjacent content */
-    margin-bottom: 20px; /* Optional: Adds space below the figure */
+    margin: 1.4vw 0 1.4vw 2vw;
 }
 
 figure.right img {
@@ -247,8 +246,9 @@ figure.right img {
 
 figure.right figcaption {
     float: right;
+    font-size: min(16px, 1.7vw);
     font-style: italic; /* Example: Italic font style */
-    margin-top: 8px; /* Optional: Adds space above the caption */
+    margin-top: min(1vw, 10px); /* Optional: Adds space above the caption */
     color: #bebebe; /* Example: Text color */
     width: 100%; /* Ensure full width of the figure */
     text-align: center; /* Center the caption text */
@@ -318,29 +318,57 @@ figure.right figcaption {
 
 
 /* Small screens (phone) */
-@media (max-width: 429px) {
+@media (max-width: 449px) {
+    #header {    
+        width: 96%;
+        padding: 10% 2%;
+    }
+
+    #portfolio {
+        width: 94%;
+        padding: 2% 3%;
+    }
+
+    figure.right figcaption {
+        font-size: 14px;
+    }
+
     #links a {
-        font-size: 1000px;
-        margin: 10vw;
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 5vw 1.3vw;
     }
 
     #tagline {
-        font-size: 10vw;
+        font-size: 6.6vw;
     }
     
     #tagline2 {
-        font-size: 5vw;
-        margin-top: 1vw;
+        font-size: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 1.8vw;
     }
 
     #middle {
-        padding-top: 100px;
+        padding-top: 15vh;
+    }
+
+    .btn_one {
+        border: 1px solid #fff;
+        font-size: 3vw;
+        padding: 1.6vw 2.5vw;
     }
 }
 
 
 /* Medium screens (tablets and small laptops) */
 @media (min-width: 450px) and (max-width: 999px) {
+
+    #portfolio {
+        width: 84%;
+        padding: 2% 8%;
+    }
+    
     #links a {
         margin: 0.2vw;
         font-size: max(14px, 2vw);
@@ -364,7 +392,8 @@ figure.right figcaption {
     }
 
     .btn_one {
-        font-size: min(50px, 1.2vw);
+        font-size: min(40px, 1.1vw);
+        padding: min(20px, 1vw) min(35px, 2vw);;
     }
 }
 
